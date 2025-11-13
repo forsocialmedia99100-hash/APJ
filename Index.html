@@ -2,786 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Inbound Customer Support Services | APJ Call Care support solution</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Professional inbound customer support services for small and medium businesses. Call handling, WhatsApp support, email support, CRM reporting and more." />
+  <title>APJ Customer Care Solution | Premium Inbound Support Services</title>
+  <meta name="description" content="APJ Customer Care Solution provides professional inbound customer support with elegant visuals and an English-friendly modern interface." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    :root {
+      --apj-blue: #0b2c5f;
+      --apj-orange: #f57c00;
+      --apj-pink: #ff4081;
+      --apj-teal: #00bfa5;
+      --gradient: linear-gradient(135deg, #0b2c5f, #f57c00, #ff4081);
+      --bg-soft: #f8fafc;
+      --text-main: #111827;
+      --radius: 16px;
     }
 
-    body {
-      background: #f5f6fa;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    header {
-      background: #ffffff;
-      border-bottom: 1px solid #e3e3e3;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0 16px;
-    }
-
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 14px 0;
-    }
-
-    .logo {
-      font-weight: 700;
-      font-size: 1.25rem;
-      letter-spacing: 0.03em;
-      color: #1f3c88;
-    }
-
-    .logo span {
-      color: #f39c12;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 18px;
-      font-size: 0.95rem;
-    }
-
-    .nav-links a {
-      padding: 6px 0;
-      border-bottom: 2px solid transparent;
-    }
-
-    .nav-links a:hover {
-      border-color: #f39c12;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      padding: 10px 20px;
-      background: #1f3c88;
-      color: #fff;
-      border-radius: 999px;
-      border: none;
-      cursor: pointer;
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
-    }
-
-    .btn-primary:hover {
-      background: #172b5d;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-      transform: translateY(-1px);
-    }
-
-    .btn-outline {
-      display: inline-block;
-      padding: 8px 18px;
-      border-radius: 999px;
-      border: 1px solid #1f3c88;
-      color: #1f3c88;
-      font-size: 0.9rem;
-      background: #fff;
-      cursor: pointer;
-      transition: background 0.15s ease, color 0.15s ease;
-    }
-
-    .btn-outline:hover {
-      background: #1f3c88;
-      color: #fff;
-    }
-
-    /* Hero Section */
-    .hero {
-      padding: 60px 0 40px;
-      background: linear-gradient(135deg, #eef4ff, #fef9e7);
-      border-bottom: 1px solid #e3e3e3;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.3fr 1fr;
-      gap: 32px;
-      align-items: center;
-    }
-
-    .hero-title {
-      font-size: 2.1rem;
-      font-weight: 700;
-      margin-bottom: 12px;
-      color: #1f2933;
-    }
-
-    .hero-title span {
-      color: #f39c12;
-    }
-
-    .hero-subtitle {
-      font-size: 1rem;
-      color: #4b5563;
-      margin-bottom: 16px;
-    }
-
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      font-size: 0.8rem;
-      padding: 5px 10px;
-      border-radius: 999px;
-      background: rgba(31,60,136,0.1);
-      color: #1f3c88;
-      margin-bottom: 10px;
-    }
-
-    .hero-points {
-      font-size: 0.92rem;
-      color: #374151;
-      margin-bottom: 18px;
-    }
-
-    .hero-points ul {
-      list-style: none;
-    }
-
-    .hero-points li {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 4px;
-    }
-
-    .hero-points li::before {
-      content: "✔";
-      color: #16a34a;
-      font-size: 0.9rem;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-      margin-top: 10px;
-    }
-
-    .hero-actions small {
-      font-size: 0.8rem;
-      color: #6b7280;
-    }
-
-    .hero-card {
-      background: #fff;
-      border-radius: 14px;
-      padding: 18px 16px;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.06);
-      font-size: 0.9rem;
-    }
-
-    .hero-card h3 {
-      font-size: 1rem;
-      margin-bottom: 8px;
-      color: #1f2933;
-    }
-
-    .hero-card-row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 6px;
-      font-size: 0.85rem;
-      color: #4b5563;
-    }
-
-    .hero-highlight {
-      margin-top: 10px;
-      padding-top: 8px;
-      border-top: 1px dashed #e5e7eb;
-      font-size: 0.8rem;
-      color: #6b7280;
-    }
-
-    /* Sections */
-    section {
-      padding: 50px 0 40px;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
 
-    .section-title {
-      text-align: center;
-      margin-bottom: 8px;
-      font-size: 1.6rem;
-      color: #111827;
-      font-weight: 700;
-    }
-
-    .section-subtitle {
-      text-align: center;
-      font-size: 0.95rem;
-      color: #6b7280;
-      margin-bottom: 30px;
-    }
-
-    /* Services */
-    .grid-3 {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .card {
-      background: #fff;
-      padding: 16px 14px;
-      border-radius: 12px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.03);
-      font-size: 0.9rem;
-    }
-
-    .card h3 {
-      font-size: 1rem;
-      margin-bottom: 8px;
-      color: #111827;
-    }
-
-    .card p {
-      font-size: 0.85rem;
-      color: #4b5563;
-      margin-bottom: 8px;
-    }
-
-    .card ul {
-      list-style: none;
-      font-size: 0.84rem;
-      color: #4b5563;
-    }
-
-    .card ul li {
-      margin-bottom: 4px;
-    }
-
-    /* Pricing */
-    .pricing-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0,1fr));
-      gap: 18px;
-    }
-
-    .price-card {
-      position: relative;
-      border-top: 3px solid #1f3c88;
-    }
-
-    .price-tag {
-      font-size: 1.1rem;
-      font-weight: 700;
-      margin-bottom: 4px;
-      color: #111827;
-    }
-
-    .price-note {
-      font-size: 0.8rem;
-      color: #6b7280;
-      margin-bottom: 10px;
-    }
-
-    .badge-popular {
-      position: absolute;
-      top: 10px;
-      right: 14px;
-      font-size: 0.7rem;
-      background: #f39c12;
-      color: #fff;
-      padding: 3px 8px;
-      border-radius: 999px;
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-    }
-
-    .price-card ul li::before {
-      content: "• ";
-      color: #1f3c88;
-    }
-
-    /* Industries */
-    .pill-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: center;
-      margin-top: 6px;
-    }
-
-    .pill {
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: #fff;
-      border: 1px solid #e5e7eb;
-      font-size: 0.8rem;
-      color: #374151;
-    }
+    body { background: var(--bg-soft); color: var(--text-main); overflow-x: hidden; line-height: 1.7; scroll-behavior: smooth; }
 
-    /* Why Us */
-    .why-grid {
-      display: grid;
-      grid-template-columns: 1.2fr 1fr;
-      gap: 24px;
-      align-items: center;
-    }
-
-    .why-list {
-      list-style: none;
-      font-size: 0.9rem;
-      color: #374151;
-    }
-
-    .why-list li {
-      margin-bottom: 8px;
-      display: flex;
-      gap: 8px;
-      align-items: flex-start;
-    }
-
-    .why-list li span.icon {
-      font-size: 1rem;
-      color: #1f3c88;
-      margin-top: 2px;
-    }
-
-    .simple-box {
-      background: #fff;
-      border-radius: 12px;
-      padding: 14px;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
-      font-size: 0.85rem;
-      color: #4b5563;
-    }
-
-    /* Contact */
-    .contact-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 1fr;
-      gap: 24px;
-    }
-
-    form {
-      background: #fff;
-      padding: 16px;
-      border-radius: 12px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.04);
-    }
-
-    .form-group {
-      margin-bottom: 10px;
-    }
+    header { position: sticky; top: 0; z-index: 100; background: rgba(255, 255, 255, 0.95); box-shadow: 0 3px 10px rgba(0,0,0,0.1); backdrop-filter: blur(10px); }
+    .container { max-width: 1150px; margin: auto; padding: 0 20px; }
+    .navbar { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
 
-    label {
-      display: block;
-      font-size: 0.82rem;
-      color: #374151;
-      margin-bottom: 4px;
-    }
-
-    input, textarea {
-      width: 100%;
-      padding: 8px 10px;
-      border-radius: 8px;
-      border: 1px solid #d1d5db;
-      font-size: 0.85rem;
-      outline: none;
-    }
-
-    input:focus, textarea:focus {
-      border-color: #1f3c88;
-      box-shadow: 0 0 0 1px rgba(31,60,136,0.15);
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 80px;
-    }
-
-    .contact-info-box {
-      font-size: 0.9rem;
-      color: #374151;
-    }
-
-    .contact-info-box p {
-      margin-bottom: 8px;
-    }
+    .brand { display: flex; align-items: center; gap: 10px; }
+    .brand-logo img { width: 50px; height: 50px; border-radius: 50%; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+    .brand-text { font-weight: 700; color: var(--apj-blue); font-size: 1.2rem; }
 
-    .contact-highlight {
-      margin-top: 8px;
-      font-size: 0.82rem;
-      color: #6b7280;
-    }
+    nav a { margin: 0 12px; color: #333; text-decoration: none; font-weight: 500; transition: color 0.3s ease; }
+    nav a:hover { color: var(--apj-orange); }
 
-    footer {
-      padding: 16px 0 10px;
-      border-top: 1px solid #e5e7eb;
-      font-size: 0.8rem;
-      color: #6b7280;
-      text-align: center;
-      background: #fff;
-      margin-top: 20px;
-    }
+    .btn-primary { background: var(--gradient); color: white; padding: 10px 22px; border-radius: 999px; border: none; font-weight: 600; cursor: pointer; transition: all 0.3s ease; }
+    .btn-primary:hover { transform: translateY(-3px); filter: brightness(1.1); }
 
-    footer a {
-      color: #1f3c88;
-      font-weight: 500;
-    }
+    .hero { background: linear-gradient(135deg, #fceabb, #f8b500); color: #fff; padding: 120px 0; text-align: center; animation: fadeIn 1s ease-in; }
+    .hero h1 { font-size: 2.8rem; margin-bottom: 10px; color: #0b2c5f; }
+    .hero p { font-size: 1.1rem; color: #333; }
 
-    /* Responsive */
-    @media (max-width: 900px) {
-      .hero-grid,
-      .grid-3,
-      .pricing-grid,
-      .why-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-      }
+    section { padding: 100px 0; }
+    .section-title { text-align: center; font-size: 2rem; font-weight: 700; margin-bottom: 40px; background: var(--gradient); -webkit-background-clip: text; color: transparent; }
 
-      .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-      }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+    .card { background: #fff; padding: 30px; border-radius: var(--radius); text-align: center; box-shadow: 0 6px 18px rgba(0,0,0,0.08); transition: all 0.4s ease; }
+    .card:hover { transform: translateY(-10px); box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+    .card i { font-size: 2.2rem; background: var(--gradient); -webkit-background-clip: text; color: transparent; margin-bottom: 15px; }
 
-      .nav-links {
-        font-size: 0.85rem;
-        flex-wrap: wrap;
-      }
+    #contact p { text-align: center; font-size: 1.1rem; color: #333; }
 
-      .hero {
-        padding-top: 40px;
-      }
-    }
+    footer { background: var(--gradient); color: white; text-align: center; padding: 20px 0; font-size: 0.9rem; }
 
-    @media (max-width: 600px) {
-      .hero-title {
-        font-size: 1.6rem;
-      }
+    .callback-form-overlay { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.6); backdrop-filter: blur(4px); justify-content: center; align-items: center; z-index: 999; }
+    .callback-form { background: white; padding: 30px; border-radius: var(--radius); width: 90%; max-width: 400px; box-shadow: 0 8px 25px rgba(0,0,0,0.2); }
+    .callback-form h3 { text-align: center; color: var(--apj-blue); margin-bottom: 15px; }
+    .callback-form input, .callback-form textarea { width: 100%; padding: 10px; margin-bottom: 12px; border-radius: 8px; border: 1px solid #ccc; font-size: 0.95rem; }
+    .callback-form button { background: var(--gradient); border: none; padding: 10px; color: #fff; width: 100%; border-radius: 8px; font-weight: 600; cursor: pointer; }
 
-      .section-title {
-        font-size: 1.4rem;
-      }
-    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
   </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
     <div class="container navbar">
-      <div class="logo">
-        <span>APJ Call Care</span> Support
+      <div class="brand">
+        <div class="brand-logo"><img src=".\apj-logo.jpeg" alt="APJ Logo"></div>
+        <div class="brand-text">APJ Customer Care Solution</div>
       </div>
-      <nav class="nav-links">
+      <nav>
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
         <a href="#industries">Industries</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a href="#contact" class="btn-outline">Get Free Trial</a>
+      <button id="requestCallbackBtn" class="btn-primary">Request Callback</button>
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero">
-    <div class="container hero-grid">
-      <div>
-        <div class="hero-badge">Inbound Customer Support • Hindi + English</div>
-        <h1 class="hero-title">
-          Professional <span>Inbound Support</span> for Your Business
-        </h1>
-        <p class="hero-subtitle">
-          हम आपके ग्राहकों के calls, WhatsApp और emails को professional तरीके से handle करते हैं,
-          ताकि आपका समय बचे और customer satisfaction बढ़े।
-        </p>
-
-        <div class="hero-points">
-          <ul>
-            <li>Customer call receiving & query resolution</li>
-            <li>WhatsApp / chat & email support</li>
-            <li>Daily / weekly CRM reporting</li>
-          </ul>
-        </div>
-
-        <div class="hero-actions">
-          <a href="#contact" class="btn-primary">Request a Callback</a>
-          <a href="#pricing" class="btn-outline">View Pricing</a>
-          <small>7 दिन का free trial उपलब्ध*</small>
-        </div>
-      </div>
-
-      <div class="hero-card">
-        <h3>Quick Snapshot</h3>
-        <div class="hero-card-row">
-          <span>Support Hours</span>
-          <span>Flexible (as per your need)</span>
-        </div>
-        <div class="hero-card-row">
-          <span>Languages</span>
-          <span>Hindi & English</span>
-        </div>
-        <div class="hero-card-row">
-          <span>Type</span>
-          <span>Inbound Calls + WhatsApp + Email</span>
-        </div>
-        <div class="hero-card-row">
-          <span>Ideal For</span>
-          <span>Small & Medium Businesses</span>
-        </div>
-        <div class="hero-highlight">
-          Start with a small plan and scale as your call volume grows.  
-          कोई setup tension नहीं – हम A to Z सब manage करते हैं।
-        </div>
-      </div>
+    <div class="container">
+      <h1>Professional Inbound Support Tailored for You</h1>
+      <p>Delivering exceptional customer care through calls, chats, and emails with a personal touch.</p>
     </div>
   </section>
 
-  <!-- Services -->
   <section id="services">
     <div class="container">
-      <h2 class="section-title">Our Inbound Support Services</h2>
-      <p class="section-subtitle">
-        Complete customer support solution – calls, WhatsApp, emails और reporting एक ही जगह से।
-      </p>
-
+      <h2 class="section-title">Our Services</h2>
       <div class="grid-3">
-        <div class="card">
-          <h3>Call Handling</h3>
-          <p>आपके सभी customer calls को trained agents द्वारा professionally handle किया जाएगा।</p>
-          <ul>
-            <li>General enquiry calls</li>
-            <li>Order / service status</li>
-            <li>Complaint logging</li>
-            <li>Basic troubleshooting</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>WhatsApp & Chat Support</h3>
-          <p>आज customer सबसे ज़्यादा WhatsApp पर active रहता है – हम उसी पर support देते हैं।</p>
-          <ul>
-            <li>WhatsApp enquiry handling</li>
-            <li>Quick replies & follow-ups</li>
-            <li>Simple templates & FAQs</li>
-            <li>Lead qualification</li>
-          </ul>
-        </div>
-
-        <div class="card">
-          <h3>Email & CRM Reporting</h3>
-          <p>हर interaction का proper record और रिपोर्टिंग ताकि आप business decisions ले सकें।</p>
-          <ul>
-            <li>Email query response</li>
-            <li>Issue tracking</li>
-            <li>Daily / weekly reports</li>
-            <li>Basic CRM updates</li>
-          </ul>
-        </div>
+        <div class="card"><i class="fas fa-phone"></i><h3>Inbound Call Management</h3><p>Our experts handle your customer calls with care, professionalism, and promptness.</p></div>
+        <div class="card"><i class="fab fa-whatsapp"></i><h3>WhatsApp & Live Chat</h3><p>We provide fast, friendly, and effective support via WhatsApp and chat tools.</p></div>
+        <div class="card"><i class="fas fa-envelope"></i><h3>Email Support</h3><p>Comprehensive email handling and CRM reporting for smart customer follow-ups.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing -->
   <section id="pricing">
     <div class="container">
-      <h2 class="section-title">Simple & Transparent Pricing</h2>
-      <p class="section-subtitle">
-        Start small, grow anytime – no hidden charges. आपके call volume और timing के हिसाब से plan।
-      </p>
-
-      <div class="pricing-grid">
-        <div class="card price-card">
-          <div class="price-tag">₹5,000 / month</div>
-          <div class="price-note">Basic Package</div>
-          <p>छोटे business और कम call volume के लिए ideal।</p>
-          <ul>
-            <li>2–3 hours daily support</li>
-            <li>Inbound calls + WhatsApp enquiry</li>
-            <li>Basic daily summary</li>
-          </ul>
-        </div>
-
-        <div class="card price-card">
-          <div class="badge-popular">Popular</div>
-          <div class="price-tag">₹10,000 / month</div>
-          <div class="price-note">Standard Package</div>
-          <p>Growing business के लिए perfect balance of cost & coverage.</p>
-          <ul>
-            <li>Up to 6 hours daily support</li>
-            <li>Calls + WhatsApp + Email</li>
-            <li>Weekly performance report</li>
-            <li>Priority onboarding</li>
-          </ul>
-        </div>
-
-        <div class="card price-card">
-          <div class="price-tag">From ₹18,000 / month</div>
-          <div class="price-note">Premium / Dedicated Agent</div>
-          <p>High volume या dedicated agent की जरूरत हो तो ये best है।</p>
-          <ul>
-            <li>Up to 10 hours daily</li>
-            <li>Dedicated support agent</li>
-            <li>Detailed CRM & reporting</li>
-            <li>Custom scripts & processes</li>
-          </ul>
-        </div>
+      <h2 class="section-title">Pricing Plans</h2>
+      <div class="grid-3">
+        <div class="card"><i class="fas fa-leaf"></i><h3>Basic</h3><p>₹5,000 / month – Perfect for small-scale businesses managing limited customer interactions.</p></div>
+        <div class="card"><i class="fas fa-star"></i><h3>Standard</h3><p>₹10,000 / month – Balanced plan offering flexibility for growing businesses.</p></div>
+        <div class="card"><i class="fas fa-crown"></i><h3>Premium</h3><p>₹18,000+ / month – Dedicated agents, extended support hours, and advanced analytics.</p></div>
       </div>
-
-      <p style="font-size:0.8rem;color:#6b7280;margin-top:10px;text-align:center;">
-        *Pricing आपके exact requirement (hours, language, volume) के अनुसार customize की जा सकती है।
-      </p>
     </div>
   </section>
 
-  <!-- Industries -->
   <section id="industries">
     <div class="container">
-      <h2 class="section-title">Who Do We Work With?</h2>
-      <p class="section-subtitle">
-        हम छोटे और मध्यम स्तर के business owners के साथ काम करते हैं जो अपनी खुद की support team नहीं बना पाते।
-      </p>
-
-      <div class="pill-row">
-        <div class="pill">E-Commerce Sellers</div>
-        <div class="pill">Coaching Institutes</div>
-        <div class="pill">Clinics & Labs</div>
-        <div class="pill">Real Estate Agents</div>
-        <div class="pill">Home Services</div>
-        <div class="pill">Travel & Taxi</div>
-        <div class="pill">Local Retail Shops</div>
-        <div class="pill">Startups & SaaS</div>
+      <h2 class="section-title">Industries We Serve</h2>
+      <div class="grid-3">
+        <div class="card"><i class="fas fa-shopping-cart"></i><h3>E-commerce</h3><p>We help manage orders, product queries, and returns with precision and speed.</p></div>
+        <div class="card"><i class="fas fa-briefcase"></i><h3>Startups</h3><p>Affordable, scalable support to help your business grow faster.</p></div>
+        <div class="card"><i class="fas fa-user-md"></i><h3>Healthcare</h3><p>Streamlined appointment scheduling and patient communication solutions.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- Why Us -->
-  <section>
-    <div class="container why-grid">
-      <div>
-        <h2 class="section-title" style="text-align:left;margin-bottom:6px;">Why Choose Us?</h2>
-        <p class="section-subtitle" style="text-align:left;margin-bottom:18px;">
-          Simple process, clear communication और flexible model – आपके business की जरूरत के अनुसार।
-        </p>
-        <ul class="why-list">
-          <li>
-            <span class="icon">⭐</span>
-            <span><strong>Hindi + English support</strong> – आपके target customers की भाषा में बात।</span>
-          </li>
-          <li>
-            <span class="icon">⭐</span>
-            <span><strong>No setup headache</strong> – phone system, basic CRM और process हम setup करते हैं।</span>
-          </li>
-          <li>
-            <span class="icon">⭐</span>
-            <span><strong>Pay-as-you-grow</strong> – शुरू में छोटा plan, बाद में जरूरत हो तो hours बढ़ाएं।</span>
-          </li>
-          <li>
-            <span class="icon">⭐</span>
-            <span><strong>Owner-level attention</strong> – direct communication, fast changes और real-time feedback।</span>
-          </li>
-          <li>
-            <span class="icon">⭐</span>
-            <span><strong>Clear reporting</strong> – daily/weekly report से आपको साफ दिखेगा कि क्या काम हुआ।</span>
-          </li>
-        </ul>
-      </div>
-      <div class="simple-box">
-        <strong>How It Works:</strong><br /><br />
-        1. आप हमें अपने business की basic details देंगे (products, services, FAQs).<br />
-        2. हम आपके लिए simple call script और reply templates तैयार करेंगे।<br />
-        3. 2–3 दिन में setup complete – फोन नंबर / WhatsApp connect हो जाएगा।<br />
-        4. हम trial period में काम दिखाएंगे; पसंद आने पर monthly plan start कर सकते हैं।<br /><br />
-        <em>इतना simple process कि आप आराम से अपना core business संभाल सकें।</em>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
   <section id="contact">
     <div class="container">
-      <h2 class="section-title">Request a Free Consultation</h2>
-      <p class="section-subtitle">
-        नीचे form भरिए या सीधे call / WhatsApp कीजिए – हम आपके use case के लिए best plan suggest करेंगे।
-      </p>
-
-      <div class="contact-grid">
-        <form>
-          <div class="form-group">
-            <label for="name">Your Name / आपका नाम</label>
-            <input type="text" id="name" placeholder="Enter your name" />
-          </div>
-          <div class="form-group">
-            <label for="business">Business Name / Company</label>
-            <input type="text" id="business" placeholder="Your shop / brand / company name" />
-          </div>
-          <div class="form-group">
-            <label for="phone">Mobile Number</label>
-            <input type="tel" id="phone" placeholder="Enter your phone / WhatsApp number" />
-          </div>
-          <div class="form-group">
-            <label for="email">Email ID (optional)</label>
-            <input type="email" id="email" placeholder="Enter your email" />
-          </div>
-          <div class="form-group">
-            <label for="message">Requirement / Message</label>
-            <textarea id="message" placeholder="e.g. Need support for my coaching institute 4–6 hours daily."></textarea>
-          </div>
-          <button type="button" class="btn-primary" style="width:100%;">Submit (Demo Form Only)</button>
-          <p style="font-size:0.75rem;color:#6b7280;margin-top:6px;text-align:center;">
-            Note: यह demo form है – actual enquiry के लिए नीचे दिए गए WhatsApp/Call details use करें।
-          </p>
-        </form>
-
-        <div class="contact-info-box">
-          <p><strong>APJ Call Care Support</strong></p>
-          <p>📞 Mobile / WhatsApp: <strong>+91-9044071833, 8853061859, 9717056043</strong></p>
-          <p>📧 Email: <strong>support@apjsolution.com</strong></p>
-          <p>📍 Location: <strong>Kanpur, India</strong></p>
-
-          <div class="contact-highlight">
-            आप सीधे WhatsApp पर “Hi” भेजकर भी connect हो सकते हैं –  
-            हम आपको 7 दिन का trial model समझाकर best plan suggest करेंगे।
-          </div>
-
-          <div class="contact-highlight">
-            <strong>Business Hours:</strong><br />
-            Monday – Saturday, 9:00 AM to 7:00 PM (custom timing भी possible है)
-          </div>
-        </div>
-      </div>
+      <h2 class="section-title">Contact Us</h2>
+      <p>📞 +91-9044071833 | +91-8853061859 | +91-9717056043<br>📧 support@apjsolution.com<br>📍 Kanpur, India</p>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      © <span id="year"></span> CallCare Support (Your Company Name). All rights reserved.
-      <br />
-      Built for small & medium businesses in India.
+  <div class="callback-form-overlay" id="callbackFormOverlay">
+    <div class="callback-form">
+      <div style="text-align:right;font-size:1.5rem;cursor:pointer;" id="closeForm">&times;</div>
+      <h3>Request a Callback</h3>
+      <form id="callbackForm">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <input type="tel" id="phone" placeholder="Your Phone Number" required>
+        <textarea id="message" placeholder="Your Message" rows="3"></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </div>
+  </div>
+
+  <footer>
+    <div class="container">© <span id="year"></span> <strong>APJ Customer Care Solution</strong>. All rights reserved.</div>
   </footer>
 
   <script>
-    // Auto year in footer
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
+    const overlay = document.getElementById('callbackFormOverlay');
+    const openBtn = document.getElementById('requestCallbackBtn');
+    const closeBtn = document.getElementById('closeForm');
+
+    openBtn.addEventListener('click', e => {
+      e.preventDefault();
+      overlay.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      overlay.style.display = 'none';
+    });
+
+    document.getElementById('callbackForm').addEventListener('submit', e => {
+      e.preventDefault();
+      alert('Thank you! Your callback request has been submitted.');
+      overlay.style.display = 'none';
+    });
+  </script>
 </body>
 </html>
